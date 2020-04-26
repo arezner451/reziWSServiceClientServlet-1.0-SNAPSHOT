@@ -69,7 +69,7 @@ public class reziWSClientServlet extends HttpServlet {
                 int parameter2 = Integer.parseInt(request.getParameter("p2"));
                 // TODO process result here
                 int result = port.addOperation(parameter1, parameter2);
-                out.println("Result = "+result);
+                out.println("Eredmény = "+result);
             } 
             catch (Exception ex) {
                 // TODO handle custom exceptions here
@@ -116,7 +116,7 @@ public class reziWSClientServlet extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Rövid leírás";
     }// </editor-fold>// </editor-fold>
 
 }
